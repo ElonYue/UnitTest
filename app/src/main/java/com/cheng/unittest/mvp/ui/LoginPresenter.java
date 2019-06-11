@@ -22,13 +22,14 @@ import io.reactivex.schedulers.Schedulers;
  */
 public class LoginPresenter extends BaseMVPPresenter<LoginMvpView> {
 
+    private final int time = 120;
     private CompositeDisposable mCompositeDisposable = new CompositeDisposable();
 
     public void getIdentify() {
 //        // interval隔一秒发一次，到120结束
         Disposable mDisposable = Observable
                 .interval(1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
-                .take(120)
+                .take(time)
                 .subscribeWith(new DisposableObserver<Long>() {
 
                     @Override
@@ -43,7 +44,7 @@ public class LoginPresenter extends BaseMVPPresenter<LoginMvpView> {
 
                     @Override
                     public void onNext(Long aLong) {
-                        mMvpView.countdownNext(Math.abs(aLong - 120) + "");
+                        mMvpView.countdownNext(Math.abs(aLong - time) + "");
                     }
                 });
 

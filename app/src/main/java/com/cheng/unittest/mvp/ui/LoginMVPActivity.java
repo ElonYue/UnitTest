@@ -45,7 +45,7 @@ public class LoginMVPActivity extends BaseMVPActivity<LoginMvpView, LoginPresent
     @Override
     public void countdownComplete() {
         tv_send_identify.setText(R.string.login_send_identify);
-
+        tv_send_identify.setEnabled(true);
     }
 
     @Override

@@ -85,8 +85,6 @@ public class LoginDaggerPresenter extends BaseMVPPresenter<LoginMvpView> {
                         if (isViewAttached()) {
                             mMvpView.showProgress();
                         }
-
-
                     }
                 })
                 .doAfterTerminate(
