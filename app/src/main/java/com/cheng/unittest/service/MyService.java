@@ -10,7 +10,7 @@ import android.util.Log;
  * @Author: weilu
  * @Time: 2017/12/4 11:40.
  */
-class MyService extends Service {
+public class MyService extends Service {
 
     private String TAG = "MyService";
 

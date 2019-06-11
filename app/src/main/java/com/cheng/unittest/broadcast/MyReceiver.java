@@ -11,10 +11,11 @@ import android.preference.PreferenceManager;
  * @Author: weilu
  * @Time: 2017/12/4 11:23.
  */
-class MyReceiver extends BroadcastReceiver {
+public class MyReceiver extends BroadcastReceiver {
 
 
-    private final String NAME = "name";
+    public static final String NAME = "name";
+    public final static String ACTION = "com.cheng.androidutest";
 
     @Override
     public void onReceive(Context context, Intent intent) {

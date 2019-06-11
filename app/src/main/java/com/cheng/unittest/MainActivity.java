@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     private final String type = "TYPE";
 
-    private String lifecycleState = null;
+    public String lifecycleState = null;
 
     private CheckBox checkbox;
 
