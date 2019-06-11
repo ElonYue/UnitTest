@@ -1,9 +1,10 @@
 package com.cheng.unittest.bean;
 
 /**
- * @Description:
- * @Author: weilu
- * @Time: 2017/11/4 10:45.
+ *
+ * @author  : chengyue
+ * @date    : 2019/6/12 00:42
+ *
  */
 public class Person {
 

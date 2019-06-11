@@ -22,9 +22,11 @@ import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Created by weilu on 2018/2/5.
+ *
+ * @author  : chengyue
+ * @date    : 2019/6/12 00:45
+ *
  */
-
 @ActivityScope
 public class LoginDaggerPresenter extends BaseMVPPresenter<LoginMvpView> {
 

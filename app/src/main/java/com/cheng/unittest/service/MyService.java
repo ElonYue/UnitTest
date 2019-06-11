@@ -6,10 +6,12 @@ import android.os.IBinder;
 import android.util.Log;
 
 /**
- * @Description: 自定义服务
- * @Author: weilu
- * @Time: 2017/12/4 11:40.
+ * 自定义服务
+ *
+ * @author : chengyue
+ * @date : 2019/6/12 00:45
  */
+
 public class MyService extends Service {
 
     private String TAG = "MyService";

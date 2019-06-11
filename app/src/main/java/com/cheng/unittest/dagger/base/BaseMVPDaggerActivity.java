@@ -12,9 +12,12 @@ import javax.inject.Inject;
 import dagger.android.support.DaggerAppCompatActivity;
 
 /**
- * @author weilu
- * Created by weilu on 2018/2/5.
+ *
+ * @author  : chengyue
+ * @date    : 2019/6/12 00:44
+ *
  */
+
 public abstract class BaseMVPDaggerActivity<V extends MvpView, T extends BaseMVPPresenter<V>> extends DaggerAppCompatActivity implements MvpView {
 
     @Inject

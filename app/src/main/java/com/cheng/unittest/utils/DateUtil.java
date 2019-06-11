@@ -7,9 +7,10 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * 日期操作工具类.
- * <p>
- * 作者：weilu on 2017/1/21 13:14
+ * 日期操作工具类
+ * @author  : chengyue
+ * @date    : 2019/6/12 00:46
+ *
  */
 public class DateUtil {
 

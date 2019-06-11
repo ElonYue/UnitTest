@@ -9,7 +9,9 @@ import dagger.android.AndroidInjector;
 import dagger.android.support.DaggerApplication;
 
 /**
- * Created by weilu on 2017/12/3.
+ *
+ * @author  : chengyue
+ * @date    : 2019/6/12 00:46
  */
 
 public class MyApp extends DaggerApplication {

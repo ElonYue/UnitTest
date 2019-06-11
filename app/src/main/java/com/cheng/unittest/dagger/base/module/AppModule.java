@@ -10,9 +10,12 @@ import dagger.Module;
 import dagger.Provides;
 
 /**
- * @author weilu
- * 作者：weilu on 2018/2/5 15:20
+ *
+ * @author  : chengyue
+ * @date    : 2019/6/12 00:43
+ *
  */
+
 
 @Module
 public class AppModule {

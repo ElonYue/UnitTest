@@ -7,9 +7,10 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 /**
- * @Description: 自定义广播接收器
- * @Author: weilu
- * @Time: 2017/12/4 11:23.
+ * 自定义广播接收器
+ *
+ * @author : chengyue
+ * @date : 2019/6/12 00:42
  */
 public class MyReceiver extends BroadcastReceiver {
 
