@@ -17,11 +17,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @Description: 广播测试
- * @Author: weilu
- * @Time: 2017/12/4 11:25.
+ * 广播测试
+ *
+ * @author : chengyue
+ * @date : 2019/6/12 00:38
  */
-
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = {23})
 public class MyReceiverTest {

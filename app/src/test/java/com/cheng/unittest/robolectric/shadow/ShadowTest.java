@@ -15,10 +15,12 @@ import org.robolectric.shadows.ShadowLog;
 import static org.junit.Assert.assertEquals;
 
 /**
- * @Description: 自定义Shadow测试
- * @Author: weilu
- * @Time: 2017/12/4 13:07.
+ * 自定义Shadow测试
+ *
+ * @author : chengyue
+ * @date : 2019/6/12 00:40
  */
+
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = {23}, shadows = {ShadowPerson.class})
 public class ShadowTest {

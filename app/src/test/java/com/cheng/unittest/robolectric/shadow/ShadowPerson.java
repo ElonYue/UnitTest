@@ -6,12 +6,13 @@ import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 
 /**
+ * 自定义Shadow
  * [Person] 的影子类
  *
- * @Description: 自定义Shadow
- * @Author: weilu
- * @Time: 2017/12/4 13:05.
+ * @author : chengyue
+ * @date : 2019/6/12 00:39
  */
+
 @Implements(Person.class)
 public class ShadowPerson {
 
@@ -33,7 +34,6 @@ public class ShadowPerson {
     public int getAge() {
         return 18;
     }
-
 
 
 }

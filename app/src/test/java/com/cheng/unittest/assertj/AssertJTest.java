@@ -15,9 +15,10 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.assertj.core.util.Lists.newArrayList;
 
 /**
- * @Description: AssertJ测试用例（参考：http://sgq0085.iteye.com/blog/2030609）
- * @Author: weilu
- * @Time: 2018/5/15 0015 09:33.
+ * AssertJ测试用例（参考：http://sgq0085.iteye.com/blog/2030609）
+ *
+ * @author : chengyue
+ * @date : 2019/6/12 00:38
  */
 public class AssertJTest {
 

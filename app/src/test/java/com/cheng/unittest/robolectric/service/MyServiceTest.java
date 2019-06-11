@@ -12,9 +12,10 @@ import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLog;
 
 /**
- * @Description: 自定义服务测试
- * @Author: weilu
- * @Time: 2017/12/4 11:40.
+ * 自定义服务测试
+ *
+ * @author : chengyue
+ * @date : 2019/6/12 00:39
  */
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = {23})

@@ -20,8 +20,8 @@ import org.robolectric.shadows.ShadowLog;
 /**
  * AssertJ 使用
  *
- * @Author: weilu
- * @Time: 2018/5/15 0015 10:33.
+ * @author : chengyue
+ * @date : 2019/6/12 00:37
  */
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = {23})

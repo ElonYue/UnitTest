@@ -35,9 +35,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 /**
- * @Description: 测试MainActivity
- * @Author: weilu
- * @Time: 2017/12/3 12:20.
+ * 测试MainActivity
+ *
+ * @author : chengyue
+ * @date : 2019/6/12 00:40
  */
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = {23})
