@@ -16,6 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    testOptions {
+        unitTests {
+            // 需要配置， 不然 robolectric 中模拟Activity等不可用
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
