@@ -1,4 +1,4 @@
-package com.cheng.unittest;
+package com.cheng.unittest.junit;
 
 
 import org.junit.Before;

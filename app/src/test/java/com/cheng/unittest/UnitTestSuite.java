@@ -1,5 +1,7 @@
 package com.cheng.unittest;
 
+import com.cheng.unittest.junit.CalculatorWithParameterizedTest;
+
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
