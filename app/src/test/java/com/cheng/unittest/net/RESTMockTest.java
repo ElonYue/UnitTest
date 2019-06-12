@@ -9,7 +9,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLog;
 
 import io.appflate.restmock.JVMFileParser;
@@ -29,11 +28,10 @@ import static io.appflate.restmock.utils.RequestMatchers.pathEndsWith;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by weilu on 2018/5/14.
+ * @author : chengyue
+ * @date : 2019/6/12 10:54
  */
-
 @RunWith(RobolectricTestRunner.class)
-@Config(sdk = {23})
 public class RESTMockTest {
 
     private GithubApi mockGithubService;
@@ -67,7 +65,7 @@ public class RESTMockTest {
     public void getUserTest() {
         RESTMockServer.whenGET(RequestMatchers.pathContains("users"))
                 //                .delay(TimeUnit.SECONDS, 5) // 模拟响应时长
-                .thenReturnFile(200, "json/users.json");
+                .thenReturnFile(200, "/json/users.json");
 
         mockGithubService.getUser("chengyue8080")
                 .subscribeOn(Schedulers.io())

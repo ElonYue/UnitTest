@@ -22,9 +22,8 @@ import io.reactivex.plugins.RxJavaPlugins;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * @Description:
- * @Author: weilu
- * @Time: 2017/12/22 0022 14:27.
+ * @author : chengyue
+ * @date : 2019/6/12 10:54
  */
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = {23})

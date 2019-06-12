@@ -31,9 +31,11 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by weilu on 2017/12/23.
+ *
+ * @author  : chengyue
+ * @date    : 2019/6/12 10:54
+ *
  */
-
 @RunWith(RobolectricTestRunner.class)
 @Config(sdk = {23})
 class MockWebServerTest {
