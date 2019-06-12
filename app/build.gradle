@@ -88,4 +88,7 @@ dependencies {
     testImplementation 'com.squareup.assertj:assertj-android-appcompat-v7:1.2.0'
     testImplementation 'com.squareup.assertj:assertj-android-design:1.2.0'
     testImplementation 'com.squareup.assertj:assertj-android-recyclerview-v7:1.2.0'
+
+
+    testImplementation 'com.github.andrzejchm.RESTMock:android:0.3.1'
 }
