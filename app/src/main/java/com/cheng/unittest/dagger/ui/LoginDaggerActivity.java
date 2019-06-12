@@ -25,6 +25,12 @@ public class LoginDaggerActivity extends BaseMVPDaggerActivity<LoginMvpView, Log
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        tv_login = findViewById(R.id.tv_login);
+        tv_send_identify = findViewById(R.id.tv_send_identify);
+        et_mobile = findViewById(R.id.et_mobile);
+        et_identify = findViewById(R.id.et_identify);
+
         tv_login.setOnClickListener(this);
         tv_send_identify.setOnClickListener(this);
     }
@@ -32,7 +38,7 @@ public class LoginDaggerActivity extends BaseMVPDaggerActivity<LoginMvpView, Log
     @Override
     public void countdownComplete() {
         tv_send_identify.setText(R.string.login_send_identify);
-
+        tv_send_identify.setEnabled(true);
     }
 
     @Override

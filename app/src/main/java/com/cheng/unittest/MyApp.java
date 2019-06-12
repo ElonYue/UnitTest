@@ -16,10 +16,10 @@ import dagger.android.support.DaggerApplication;
 
 public class MyApp extends DaggerApplication {
 
-    static MyApp instance;
+    public static MyApp instance;
 
     @Inject
-    GithubApi githubApi;
+    public GithubApi githubApi;
 
     @Override
     public void onCreate() {

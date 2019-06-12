@@ -33,13 +33,13 @@ public class LoginDaggerPresenter extends BaseMVPPresenter<LoginMvpView> {
     private GithubApi mApi;
 
     @Inject
-    LoginDaggerPresenter(GithubApi githubApi) {
+    public LoginDaggerPresenter(GithubApi githubApi) {
         this.mApi = githubApi;
     }
 
     private CompositeDisposable mCompositeDisposable = new CompositeDisposable();
 
-    void getIdentify() {
+    public void getIdentify() {
         // interval隔一秒发一次，到120结束
         Disposable mDisposable = Observable
                 .interval(1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
@@ -66,7 +66,7 @@ public class LoginDaggerPresenter extends BaseMVPPresenter<LoginMvpView> {
         mCompositeDisposable.add(mDisposable);
     }
 
-    void login(String mobile, String code) {
+    public void login(String mobile, String code) {
         if (mobile.length() != 11) {
             mMvpView.showToast("手机号码不正确");
             return;
