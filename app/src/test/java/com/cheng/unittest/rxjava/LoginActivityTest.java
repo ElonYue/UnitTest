@@ -1,0 +1,71 @@
+package com.cheng.unittest.rxjava;
+
+import android.app.Application;
+import android.widget.TextView;
+
+import com.cheng.unittest.R;
+import com.cheng.unittest.ui.LoginActivity;
+
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.robolectric.Robolectric;
+import org.robolectric.RobolectricTestRunner;
+import org.robolectric.RuntimeEnvironment;
+import org.robolectric.annotation.Config;
+
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+/**
+ * 测试LoginActivity
+ *
+ * @author : chengyue
+ * @date : 2019/6/12 09:13
+ */
+@RunWith(RobolectricTestRunner.class)
+@Config(sdk = {23})
+public class LoginActivityTest {
+
+    private LoginActivity loginActivity;
+    private TextView mTvSendIdentify;
+
+    @Rule
+    public RxJavaTestSchedulerRule rule = new RxJavaTestSchedulerRule();
+
+    @Before
+    public void setUp() {
+        loginActivity = Robolectric.setupActivity(LoginActivity.class);
+        mTvSendIdentify = loginActivity.findViewById(R.id.tv_send_identify);
+    }
+
+    @Test
+    public void testLoginActivity() {
+        assertNotNull(loginActivity);
+    }
+
+    @Test
+    public void testGetIdentify() {
+        Application application = RuntimeEnvironment.application;
+        assertEquals(mTvSendIdentify.getText().toString(),
+                application.getString(R.string.login_send_identify));
+
+        // 触发按钮点击
+        mTvSendIdentify.performClick();
+        // 时间到10秒
+        rule.testScheduler.advanceTimeTo(10, TimeUnit.SECONDS);
+        assertEquals(mTvSendIdentify.isEnabled(), false);
+        assertEquals(mTvSendIdentify.getText().toString(), "111秒后重试");
+
+        // 时间到120秒
+        rule.testScheduler.advanceTimeTo(120, TimeUnit.SECONDS);
+
+        assertEquals(mTvSendIdentify.getText().toString(),
+                application.getString(R.string.login_send_identify));
+        assertEquals(mTvSendIdentify.isEnabled(), true);
+    }
+
+}
